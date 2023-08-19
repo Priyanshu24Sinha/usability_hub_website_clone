@@ -1,0 +1,332 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primarytextcolor:#183b56;
+    --secondarytextcolor:#577592;
+    --accentcolor:#2294ed;
+    --accentcolordark:#1d69a3;
+    --paddinginlinesection:20px;
+}
+body{
+    color: var(--primarytextcolor);
+   
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondarytextcolor);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/* Utility-class */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container{
+    max-width: 1180px;
+    margin-inline:auto;
+    padding-inline: var(--primarytextcolor);
+    overflow: hidden;
+}
+.flex{
+    display:flex;
+    align-items: center;
+}
+
+ul{
+    list-style: none;  /*it is utility*/
+}
+
+.primary-button{
+    background-color: var(--accentcolor);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondarytextcolor);
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+.primary-button:hover{
+   background-color: var(--accentcolordark);
+
+}
+.secondary-button{
+    border: 0.5px solid var(--secondarytextcolor);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primarytextcolor) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+  background-color: var(--accentcolordark);  
+}
+
+.hover-links{
+    color: var(--primarytextcolor);
+    transition: 0.3s ease-out;
+    
+}
+.hover-links:hover{
+    color: var(--accentcolor);
+   
+}
+
+/* Top-Bannners */
+
+.top-banner{
+    background-color: #2294ed;
+    background-image: url(./assets/asset\ 32.png);
+}
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* Nav-Bar */
+
+.main-nav{
+    margin-top:20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+.nav-toggle{
+    display: none;
+}
+
+/* Header section */
+
+header{
+    padding: 50px var(--paddinginlinesection);
+}
+
+.header-secton{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-right img{
+    width: 100%;
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: 50px;
+}
+.get-started-btn{
+    margin-top: 15px;
+}
+
+/* Companies-section */
+
+.companies-header{
+    text-align: center;
+    margin-block: 30px;  /*to give margintop,bottom same at once*/
+}
+.logos{
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo{
+    height: 50px;
+}
+
+/* features-section */
+
+.features-section{
+    padding: 80px var(--paddinginlinesection) 0;
+    /* 1-top&bottom 2-left&rigt padding 0 as it is */
+   background-image: url(./assets/asset\ 34.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   /* background-size: 30%; */
+   /* background size to change the size of bg image */
+
+}
+
+.features-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.features-header h2{
+    margin-bottom: 20px;
+}
+
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+.features-card img{
+    width: 60px;
+}
+
+
+/* big feauture section */
+
+.big-feature-section{
+    padding: 30px var(--paddinginlinesection) 0;
+
+}
+.big-feature-container{
+    gap: 30px;
+}
+#second-big-feature{
+    flex-direction: row-reverse;
+}
+.feature-img img{
+    width: 100%;
+}
+.feature-description{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.big-feature-section h1{
+    margin-bottom: 15px;
+}
+
+/* examplesection */
+
+.examples-section{
+    padding: 80px var(--paddinginlinesection);
+}
+
+.examples-area{
+justify-content: space-between;
+margin-block:30px;
+flex-wrap: wrap;
+}
+
+.examples-header{
+   flex-direction: column;
+   gap: 20px;
+   margin: 40px;
+   text-align: center;
+}
+
+.examples-card{
+    height: 300px;
+    width: 23%;
+    position: relative;
+    background-color: black;
+    background-image: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset\ 37.jpeg);
+    background-size: cover;
+    transition: 0.2s ease-out;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+/* We can use nth child for setting bg img */
+/* .examples-card:nth-child(3){
+    class="examples-card" style="background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset\ 38.jpeg); ;"
+    background-size: cover;
+    1,2,3,4 for img number
+} */
+
+.examples-card:hover{
+    box-shadow: 0 0 15px black;
+}
+.cta-container-section{
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+    text-align: center;
+}
+.cta-section{
+    padding: 100px var(--paddinginlinesection);
+    background-color: #183b54;
+}
+
+.cta-container-section p{
+color: white;
+margin-top: 20px;
+
+}
+
+/* Footer */
+
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+.subfooter{
+    background-color: #8ca3bd;
+    padding: var(--paddinginlinesection);
+}
+.subfooter-container{
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.link-column .ok{
+    padding: 4px;
+    /* margin: 5px;  */
+    text-align: start;
+}
+
+/* Making the website responsive using media queries */
+
+
